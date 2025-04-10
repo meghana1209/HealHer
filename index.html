@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HealHer – Women’s Health Awareness</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Heal<span>Her</span></h1>
+    <p>Empowering women with health education and support.</p>
+  </header>
+
+  <main>
+    <!-- Menstrual Tracker -->
+    <section class="tracker">
+      <h2>Menstrual Tracker</h2>
+      <label for="lastDate">Last Period Date:</label>
+      <input type="date" id="lastDate">
+      <button onclick="predictCycle()">Predict Next Period</button>
+      <p id="prediction"></p>
+    </section>
+
+    <!-- Myth Buster -->
+    <section class="myths">
+      <h2>Myth Buster</h2>
+      <button onclick="showMyth()">Show Random Myth</button>
+      <div id="mythCard">
+        <p><strong>Myth:</strong> <span id="mythText"></span></p>
+        <p><strong>Fact:</strong> <span id="factText"></span></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 HealHer. Built with ❤️ for women.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

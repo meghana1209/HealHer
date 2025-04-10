@@ -2,41 +2,76 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HealHer – Women’s Health Awareness</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HealHer – Women's Health, Empowered</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet"/>
 </head>
 <body>
-  <header>
-    <h1>Heal<span>Her</span></h1>
-    <p>Empowering women with health education and support.</p>
+  <header class="main-header">
+    <div class="container nav">
+      <h1 class="logo">Heal<span>Her</span></h1>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="#login">Login</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <!-- Menstrual Tracker -->
-    <section class="tracker">
-      <h2>Menstrual Tracker</h2>
-      <label for="lastDate">Last Period Date:</label>
-      <input type="date" id="lastDate">
-      <button onclick="predictCycle()">Predict Next Period</button>
-      <p id="prediction"></p>
-    </section>
-
-    <!-- Myth Buster -->
-    <section class="myths">
-      <h2>Myth Buster</h2>
-      <button onclick="showMyth()">Show Random Myth</button>
-      <div id="mythCard">
-        <p><strong>Myth:</strong> <span id="mythText"></span></p>
-        <p><strong>Fact:</strong> <span id="factText"></span></p>
+  <section class="hero">
+    <div class="container">
+      <div class="hero-text">
+        <h2>Your Health. Your Power.</h2>
+        <p>Track your cycle, bust myths, and connect with doctors – all in one place. Empowering women, especially in rural communities.</p>
+        <a href="#signup" class="cta-button">Get Started</a>
       </div>
-    </section>
-  </main>
+      <img src="images/hero-img.png" class="hero-img" alt="Empowered woman" />
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container">
+      <h2>Why HealHer?</h2>
+      <p>Many women in rural regions lack access to accurate health resources. HealHer bridges that gap with tools tailored to their needs.</p>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <div class="container">
+      <h2>What We Offer</h2>
+      <div class="features-grid">
+        <div class="feature-box">
+          <img src="images/tracker.png" alt="Tracker"/>
+          <h3>Menstrual Tracker</h3>
+          <p>Keep track of your cycle with an intuitive 28-day system.</p>
+        </div>
+        <div class="feature-box">
+          <img src="images/myth.png" alt="Myth Buster"/>
+          <h3>Myth Buster</h3>
+          <p>Break the silence. Break the myths. Know the facts.</p>
+        </div>
+        <div class="feature-box">
+          <img src="images/doctor.png" alt="Doctor Helpline"/>
+          <h3>Doctor Helpline</h3>
+          <p>Get connected to local health experts in your language.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta" id="signup">
+    <div class="container">
+      <h2>Join the HealHer movement</h2>
+      <p>Sign up and take control of your health journey today.</p>
+      <a href="#login" class="cta-button">Sign Up</a>
+    </div>
+  </section>
 
   <footer>
-    <p>&copy; 2025 HealHer. Built with ❤️ for women.</p>
+    <div class="container">
+      <p>Made with ❤️ for every woman. © 2025 HealHer</p>
+    </div>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
